@@ -1,0 +1,56 @@
+.fil0 {
+    fill: var(--color-special-500);
+}
+.nav li:hover{
+    background-color: rgb(var(--color-special-300-rgb));
+}
+.nav li:hover>a{
+    color: #fff;
+}
+.nav li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -10px; /* 减去2px来覆盖间隙 */
+    z-index: -1;
+    background: transparent; /* 可以设置背景色，如果需要 */
+  }
+.nav li ul{
+    margin-left: -10px;
+    margin-top: 10px;
+    display: none;
+}
+.nav li:hover>ul,
+.nav li ul:hover{
+    display: block;
+}
+.choose span{
+    display: inline-block; /* 使span具有块级特性 */
+    width: 80px; /* 正方形的宽度 */
+    height: 80px; /* 正方形的高度 */
+    border-radius: 80px;
+}
+.choose span h1{
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+}
+.bg-danger-400{
+
+    background-color: rgb(var(--color-danger-400-rgb));
+}
+.bg-danger-300{
+
+    background-color: rgb(var(--color-danger-300-rgb));
+}
+.bg-danger-200{
+
+    background-color: rgb(var(--color-danger-200-rgb));
+}
+.bg-danger-100{
+
+    background-color: rgb(var(--color-danger-100-rgb));
+}
